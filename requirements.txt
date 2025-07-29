@@ -8,4 +8,5 @@ torch==2.7.1+cpu
 python-dateutil
 python-dotenv
 groq
+pinecone-client
 
