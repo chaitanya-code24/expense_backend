@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pymongo
+chromadb
+sentence-transformers
+torch==2.7.1+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
+python-dateutil
+python-dotenv
+groq
+
