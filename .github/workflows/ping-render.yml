@@ -2,7 +2,7 @@ name: Keep Render Backend Alive
 
 on:
   schedule:
-    - cron: "*/5 * * * *"  # Every 5 minutes
+    - cron: "*/2 * * * *"  # Every 5 minutes
   workflow_dispatch:       # Allows manual trigger
 
 jobs:
@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ping Render Backend
-        run: curl -s https://your-backend.onrender.com/ping || echo "Ping failed"
+        run: curl -s https://expense-backend-lejp.onrender.com/ping || echo "Ping failed"
