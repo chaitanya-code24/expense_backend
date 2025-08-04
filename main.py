@@ -240,7 +240,7 @@ async def chat_with_model(query: str, uid: str):
             
             query_payload = {
                     "inputs": {"text": query},
-                    "top_k": 10,
+                    "top_k": 50,
                     "filter": {"uid": uid}
                 }
             results = index.search(
