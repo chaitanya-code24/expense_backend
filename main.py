@@ -231,7 +231,7 @@ async def chat_with_model(query: str, uid: str):
                     namespace="name_space", 
                     query={
                             "inputs": {"text": query}, 
-                            "top_k": 20,
+                            "top_k": 500,
                             "filter": {"uid": uid},
                         },
                     fields=["category", "chunk_text",   
@@ -240,7 +240,7 @@ async def chat_with_model(query: str, uid: str):
             
             query_payload = {
                     "inputs": {"text": query},
-                    "top_k": 50,
+                    "top_k": 500,
                     "filter": {"uid": uid}
                 }
             results = index.search(
